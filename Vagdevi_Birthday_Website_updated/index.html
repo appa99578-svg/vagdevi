@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Vagdevi 🎂</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="hearts"></div>
+
+<section id="lockScreen" class="screen active">
+  <div class="lock-card">
+    <div class="lock-icon">🎁</div>
+    <h1>A Little Surprise</h1>
+    <h2>For Vagdevi 💗</h2>
+    <p>This is something special, just for you...</p>
+    <div class="password-box">
+      <span>🔐</span>
+      <input type="password" id="passwordInput" placeholder="Enter password..." autocomplete="off">
+      <button id="showPassword" type="button">👁</button>
+    </div>
+    <button class="main-btn" onclick="unlockWebsite()">✨ Unlock My Surprise</button>
+    <p id="wrongPassword" class="error">Oops! That's not the secret password 😄</p>
+    <small>Shhh... it's a secret 💕</small>
+  </div>
+</section>
+
+<main id="mainWebsite" class="hidden">
+<section class="hero">
+  <div class="hero-content">
+    <div class="sparkle">✨ ✨ ✨</div>
+    <p class="small-title">TODAY IS YOUR SPECIAL DAY</p>
+    <h1>Happy Birthday <span>Vagdevi 💗</span></h1>
+    <p class="hero-text">A special day for a very special person.</p>
+    <button class="main-btn" onclick="scrollToMemories()">Let's Celebrate →</button>
+  </div>
+</section>
+
+<section class="section memories" id="memories">
+  <p class="section-small">BEAUTIFUL MEMORIES</p>
+  <h2>Some Beautiful Memories 💕</h2>
+  <p class="section-description">Two special moments, saved forever.</p>
+  <div class="photo-grid">
+    <div class="photo-card">
+      <div class="photo-number">01</div>
+      <img src="assets/photo1.jpg" alt="Vagdevi Memory 1">
+      <div class="photo-caption">Your smile makes everything brighter 💗</div>
+    </div>
+    <div class="photo-card">
+      <div class="photo-number">02</div>
+      <img src="assets/photo2.jpg" alt="Vagdevi Memory 2">
+      <div class="photo-caption">Keep smiling and shining ✨</div>
+    </div>
+  </div>
+</section>
+
+<section class="section message-section">
+  <div class="letter">
+    <div class="flower">🌸</div>
+    <p class="letter-small">A MESSAGE FOR YOU</p>
+    <h2>Dear Vagdevi 💕</h2>
+    <p>On your special day, I just want to say how amazing you are.</p>
+    <p>May your life be filled with happiness, beautiful moments and unforgettable memories.</p>
+    <p>Keep smiling, keep shining and always be the wonderful person you are.</p>
+    <p>May all your dreams come true and may this new year of your life bring you lots of happiness and success. ✨</p>
+    <h3>Happy Birthday! 🎂💗</h3>
+    <p class="signature">With Lots of Love 💕</p>
+  </div>
+</section>
+
+<section class="section gift-section">
+  <p class="section-small">A LITTLE SURPRISE</p>
+  <h2>Here's A Special Gift For You 🎁</h2>
+  <p>Click the gift box to open your surprise.</p>
+  <div class="gift" id="giftBox" onclick="openGift()">
+    <div class="gift-lid"></div>
+    <div class="gift-box">
+      <div class="ribbon-vertical"></div>
+      <div class="ribbon-horizontal"></div>
+    </div>
+  </div>
+  <p class="click-text">🎁 Click Me</p>
+</section>
+
+<section id="surpriseSection" class="section surprise hidden">
+  <div class="surprise-card">
+    <div class="big-heart">💗</div>
+    <h2>Happy Birthday Vagdevi! 🎉</h2>
+    <p>May your dreams come true...</p>
+    <p>May your smile never fade...</p>
+    <p>And may every day bring you something beautiful. ✨</p>
+    <div class="cake">🎂</div>
+    <button class="main-btn" onclick="celebrate()">🎉 Celebrate!</button>
+  </div>
+</section>
+
+<div class="music-player">
+  <div class="music-icon">🎵</div>
+  <div class="music-info">
+    <strong>Birthday Vibes</strong>
+    <span>Optional birthday song</span>
+  </div>
+  <button id="musicButton" onclick="toggleMusic()">▶</button>
+  <audio id="birthdayMusic" loop>
+    <source src="assets/birthday.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<footer>
+  <p>Made with 💗 specially for Vagdevi</p>
+  <p>✨ Keep Smiling ✨</p>
+</footer>
+</main>
+
+<div id="confettiContainer"></div>
+<script src="script.js"></script>
+</body>
+</html>

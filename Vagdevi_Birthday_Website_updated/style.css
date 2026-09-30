@@ -1,0 +1,46 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Poppins",sans-serif;background:#10091d;color:white;overflow-x:hidden}
+.hidden{display:none!important}
+.screen{min-height:100vh;display:none;align-items:center;justify-content:center;padding:20px}
+.screen.active{display:flex}
+#lockScreen{background:radial-gradient(circle at 20% 20%,#7b1e5f55,transparent 30%),radial-gradient(circle at 80% 80%,#a6327a55,transparent 30%),linear-gradient(135deg,#090817,#211027,#10091d)}
+.lock-card{width:100%;max-width:430px;padding:45px 30px;text-align:center;border:1px solid #ff6fa955;border-radius:30px;background:#160d22cc;backdrop-filter:blur(20px);box-shadow:0 0 60px #ff4f9a25,inset 0 0 30px #ffffff05;animation:cardIn 1s ease}
+@keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+.lock-icon{font-size:65px;margin-bottom:15px;animation:floating 2s infinite ease-in-out}
+@keyframes floating{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.lock-card h1{font-family:"Dancing Script",cursive;font-size:46px;color:#ff9bc7}
+.lock-card h2{font-size:22px;margin-bottom:15px}.lock-card p{color:#d8cbdc;margin-bottom:25px}
+.password-box{height:55px;display:flex;align-items:center;border:1px solid #ff72ae88;border-radius:30px;padding:0 15px;background:#ffffff08}
+.password-box input{flex:1;background:transparent;border:none;outline:none;color:white;font-size:15px;padding:10px}
+.password-box input::placeholder{color:#b9a8bb}.password-box button{background:none;border:none;cursor:pointer;font-size:17px}
+.main-btn{margin-top:20px;border:none;border-radius:30px;padding:15px 30px;color:white;font-size:15px;font-weight:600;cursor:pointer;background:linear-gradient(135deg,#ff4f9a,#b84cff);box-shadow:0 10px 30px #ff4f9a35;transition:.3s}
+.main-btn:hover{transform:translateY(-3px);box-shadow:0 15px 35px #ff4f9a55}
+.error{color:#ff809f!important;display:none;margin-top:15px}.lock-card small{display:block;margin-top:25px;color:#a999ab}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:linear-gradient(#10091d55,#10091d88),url("assets/hero.jpg");background-size:cover;background-position:center;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,transparent,#10091daa)}
+.hero-content{position:relative;z-index:2;max-width:850px}.sparkle{font-size:25px;margin-bottom:20px}
+.small-title,.section-small{letter-spacing:4px;color:#ff9bc7;font-size:12px;font-weight:600}
+.hero h1{font-family:"Dancing Script",cursive;font-size:clamp(65px,10vw,110px);line-height:.9;margin:25px 0;color:#ffb0d2;text-shadow:0 0 20px #ff4f9a,0 0 50px #ff4f9a55}
+.hero h1 span{display:block;font-size:.65em}.hero-text{color:#eadcea;font-size:18px}
+.section{padding:100px 25px;text-align:center;max-width:1100px;margin:auto}.section h2{font-family:"Dancing Script",cursive;font-size:55px;margin:15px 0;color:#ffacd0}
+.section-description{color:#bcaec0;margin-bottom:50px}.photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:35px}
+.photo-card{position:relative;padding:12px;background:#fff;transform:rotate(-2deg);box-shadow:0 20px 50px #00000066;transition:.4s}
+.photo-card:nth-child(2){transform:rotate(2deg)}.photo-card:hover{transform:rotate(0deg) translateY(-10px)}
+.photo-card img{width:100%;height:520px;object-fit:contain;display:block;background:#fff}.photo-caption{color:#321a2b;padding:18px 10px;font-family:"Dancing Script",cursive;font-size:24px}
+.photo-number{position:absolute;top:-15px;right:-15px;width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#ff5eaa;color:white;z-index:3;font-weight:bold}
+.message-section{max-width:900px}.letter{position:relative;text-align:left;padding:55px;color:#321a2b;background:linear-gradient(135deg,#fff4f8,#ffe6f0);border-radius:5px;box-shadow:0 30px 80px #00000055;transform:rotate(-1deg)}
+.letter h2{color:#a12c61;font-size:48px}.letter p{font-family:"Dancing Script",cursive;font-size:23px;line-height:1.6;margin:15px 0}.letter h3{color:#d52d79;font-size:30px;margin-top:25px}
+.letter-small{font-family:"Poppins"!important;font-size:12px!important;letter-spacing:3px;color:#b33d70}.signature{text-align:right}
+.gift-section{min-height:650px}.gift{position:relative;width:180px;height:160px;margin:80px auto 20px;cursor:pointer;transition:.5s}.gift:hover{transform:scale(1.08)}
+.gift-box{position:absolute;bottom:0;width:180px;height:120px;background:linear-gradient(135deg,#ff72a9,#c83273);border-radius:5px;box-shadow:0 25px 50px #ff3d8c55}
+.gift-lid{position:absolute;top:20px;left:-10px;width:200px;height:35px;background:#ff91bb;border-radius:5px;z-index:2}
+.ribbon-vertical{position:absolute;left:70px;width:40px;height:100%;background:#ffd35c}.ribbon-horizontal{position:absolute;top:50px;width:100%;height:30px;background:#ffd35c}.click-text{color:#ff91c0}
+.surprise{background:radial-gradient(circle,#ff4f9a22,transparent)}.surprise-card{padding:70px 30px;border-radius:30px;background:#201127;border:1px solid #ff6fa955;box-shadow:0 0 80px #ff4f9a25}
+.big-heart{font-size:70px;animation:heartBeat 1.2s infinite}@keyframes heartBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}.cake{font-size:90px;margin-top:30px}
+.music-player{position:fixed;right:20px;bottom:20px;z-index:100;width:300px;padding:15px;display:flex;align-items:center;gap:12px;background:#211229ee;backdrop-filter:blur(20px);border:1px solid #ff70ac55;border-radius:20px;box-shadow:0 10px 40px #00000055}
+.music-icon{font-size:30px}.music-info{flex:1;display:flex;flex-direction:column}.music-info strong{font-size:13px}.music-info span{color:#bcaec0;font-size:10px}
+#musicButton{width:40px;height:40px;border-radius:50%;border:none;background:#ff5fa5;color:white;cursor:pointer}
+footer{padding:50px 20px;text-align:center;color:#9e8da1;border-top:1px solid #ffffff0d}footer p{margin:8px}
+.confetti{position:fixed;top:-20px;width:10px;height:15px;z-index:999;animation:fall 4s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:700px){.lock-card{padding:35px 20px}.lock-card h1{font-size:38px}.hero{min-height:90vh}.hero h1{font-size:65px}.section{padding:75px 18px}.section h2{font-size:42px}.photo-grid{grid-template-columns:1fr}.photo-card,.photo-card:nth-child(2){transform:rotate(0)}.photo-card img{height:520px}.letter{padding:30px 22px}.letter h2{font-size:40px}.letter p{font-size:20px}.music-player{width:calc(100% - 30px);right:15px;bottom:15px}}
