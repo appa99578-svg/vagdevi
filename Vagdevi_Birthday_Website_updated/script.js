@@ -1,4 +1,4 @@
-const correctPassword = "vag";
+const correctPassword = "vag2005";
 
 document.addEventListener("DOMContentLoaded", () => createHearts());
 
